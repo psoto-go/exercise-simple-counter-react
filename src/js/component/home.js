@@ -3,6 +3,7 @@ import React from "react";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 import { Card } from "./card.js";
+import { Buttom } from "./buttom.js";
 
 //create your first component
 let cont = 0;
@@ -16,11 +17,13 @@ export function Home() {
 	cont += 1;
 	return (
 		<div className="d-flex flex-wrap m-0 row justify-content-center">
-			<Card icon="far fa-clock fa-7x"></Card>
-			<Card digit={four}></Card>
-			<Card digit={three}></Card>
-			<Card digit={two}></Card>
-			<Card digit={one}></Card>
+			<div className="d-flex flex-wrap m-0 row justify-content-center">
+				<Card icon="far fa-clock fa-7x"></Card>
+				<Card digit={four}></Card>
+				<Card digit={three}></Card>
+				<Card digit={two}></Card>
+				<Card digit={one}></Card>
+			</div>
 		</div>
 	);
 }

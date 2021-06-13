@@ -13,6 +13,6 @@ import { Home } from "./component/home.js";
 
 //render your react application
 
-setInterval(function() {
+var start = setInterval(function() {
 	ReactDOM.render(<Home />, document.querySelector("#app"));
 }, 1000);
