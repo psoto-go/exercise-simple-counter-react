@@ -15,4 +15,4 @@ import { Home } from "./component/home.js";
 
 setInterval(function() {
 	ReactDOM.render(<Home />, document.querySelector("#app"));
-}, 10);
+}, 1000);
